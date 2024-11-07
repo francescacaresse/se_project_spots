@@ -1,5 +1,7 @@
 # Project 3: Spots
 
+https://francescacaresse.github.io/se_project_spots/
+
 ### Overview
 
 - Intro
@@ -26,7 +28,7 @@ Good luck and have fun!
 
 **Description**
 
-The project sets the foundation to create a responsive website where users can upload, like and add photos onto their profile. This will be possibile from both laptop and mobile devices. Video will be provided once the first review is received.
+The project sets the foundation to create a responsive website where users can upload, like and add photos onto their profile. This will be possibile from both laptop and mobile devices.
 
 **File Structure**
 |-- index.html

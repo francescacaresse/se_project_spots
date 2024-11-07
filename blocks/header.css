@@ -3,9 +3,16 @@
   padding: 10px 0;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .header__logo {
   width: 94px;
   height: 26px;
+}
+
+@media screen and (max-width: 627px) {
+  .header {
+    width: 100vw;
+  }
 }
