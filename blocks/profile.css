@@ -13,7 +13,6 @@
 .profile__column {
   display: flex;
   flex-direction: column;
-  max-height: fit-content;
 }
 
 .profile__name {
@@ -32,11 +31,11 @@
 }
 
 .profile__description {
-  margin: 0;
+  margin: 0 0 12px;
   font-weight: 500;
   font-size: 16px;
+  max-width: 413px;
   line-height: 1;
-  padding-bottom: 12px;
   color: rgba(33, 33, 33, 0.7);
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -50,28 +49,20 @@
   display: flex;
   justify-content: start;
   gap: 8px;
-  margin-top: auto;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
   border: none;
   background-color: transparent;
-  color: rgba(33, 33, 33, 0.7);
-}
-
-.profile__edit-btn img {
+  color: #212121;
   opacity: 70%;
 }
 
 .profile__edit-btn:hover {
-  color: #212121;
-  cursor: pointer;
-  transition: color 0.5s ease;
-}
-
-.profile__edit-btn:hover img {
   opacity: 100%;
-  transition: opacity 0.5s ease;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .profile__add-btn {
@@ -92,9 +83,9 @@
 }
 
 .profile__add-btn:hover {
+  opacity: 80%;
   cursor: pointer;
-  background-color: #212121;
-  transition: color 0.5s ease;
+  transition: 0.5s ease;
 }
 
 @media screen and (max-width: 627px) {
