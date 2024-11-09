@@ -49,7 +49,7 @@
   display: flex;
   justify-content: start;
   gap: 8px;
-  margin: 0;
+  margin: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
@@ -75,7 +75,7 @@
   width: 149px;
   border: none;
   border-radius: 8px;
-  background-color: rgba(33, 33, 33, 0.7);
+  background-color: #212121;
   color: #fcf5e5;
   font-size: 16px;
   line-height: 1;
