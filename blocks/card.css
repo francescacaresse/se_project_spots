@@ -44,6 +44,7 @@
 
 .card__like-button:hover {
   cursor: pointer;
+  color: #212121;
   opacity: 100%;
 }
 
@@ -58,6 +59,8 @@
   }
 
   .card__like-button {
+    min-width: 23px;
+    min-height: 20px;
     width: 20px;
     height: 18px;
   }
