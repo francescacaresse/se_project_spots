@@ -59,11 +59,11 @@ function getCardElement(data) {
 function openModal() {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
-  editModal.classList.add("modal_opened");
+  editModal.classList.add("modal__opened");
 }
 
 function closeModal() {
-  editModal.classList.remove("modal_opened");
+  editModal.classList.remove("modal__opened");
 }
 
 function handleEditFormSubmit(evt) {
