@@ -1,7 +1,7 @@
 const initialCards = [
   {
     name: "Val Thorens",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpgz",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
   },
   {
     name: "Restaurant terrace",
@@ -59,11 +59,11 @@ function getCardElement(data) {
 function openModal() {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
-  editModal.classList.add("modal__opened");
+  editModal.classList.add("modal_opened");
 }
 
 function closeModal() {
-  editModal.classList.remove("modal__opened");
+  editModal.classList.remove("modal_opened");
 }
 
 function handleEditFormSubmit(evt) {
