@@ -32,12 +32,16 @@ const profileDescription = document.querySelector(".profile__description");
 
 const editModal = document.querySelector("#edit-modal");
 const editFormElement = editModal.querySelector(".modal__form");
-const editModalCloseBtn = document.querySelector(".modal__close-btn");
+const editModalCloseBtn = editModal.querySelector(".modal__close-btn");
 const nameInput = editModal.querySelector("#profile-name-input");
 const descriptionInput = editModal.querySelector("#profile-description-input");
 
 const cardModal = document.querySelector("#add-card-modal");
+const cardForm = cardModal.querySelector(".modal__form");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
+const cardNameInput = cardModal.querySelector("#add-card-name-input");
+const cardLinkInput = cardModal.querySelector("#add-card-link-input");
+const cardSaveBtn = cardModal.querySelector(".modal__submit-btn");
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -57,16 +61,26 @@ function handleEditFormSubmit(evt) {
   closeModal(editModal);
 }
 
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+  const inputValues = {
+    name: cardNameInput.value,
+    link: cardLinkInput.value,
+  };
+  const cardElement = getCardElement(inputValues);
+  cardsList.prepend(cardElement);
+  closeModal(cardModal);
+}
+
 function getCardElement(data) {
   console.log(data);
   const cardElement = cardTemplate.content
     .querySelector(".card")
     .cloneNode(true);
-
   const cardNameEl = cardElement.querySelector(".card__title");
-  cardNameEl.textContent = data.name;
-
   const cardImageEl = cardElement.querySelector(".card__image");
+
+  cardNameEl.textContent = data.name;
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
 
@@ -92,6 +106,7 @@ cardModalCloseBtn.addEventListener("click", () => {
 });
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
+cardForm.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
