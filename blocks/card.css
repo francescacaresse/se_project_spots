@@ -87,6 +87,10 @@
     height: 18px;
   }
 
+  .card__delete-button {
+    margin-left: 264px;
+  }
+
   .card__image {
     height: 288px;
     margin: 0;
