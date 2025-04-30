@@ -88,7 +88,7 @@
   }
 
   .card__delete-button {
-    margin-left: 264px;
+    margin-left: 246px;
   }
 
   .card__image {
@@ -99,5 +99,11 @@
   .card__title {
     font-size: 16px;
     line-height: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    max-width: 90vm;
   }
 }
