@@ -55,8 +55,8 @@
 }
 
 .modal__close_type_preview {
-  top: 80;
-  right: -900px;
+  top: 0;
+  right: 52.5px;
   position: absolute;
   background: transparent url(../images/closeicon_white.svg);
   opacity: 100%;
@@ -127,6 +127,13 @@
   max-height: 28px;
 }
 
+@media screen and (max-width: 480px) {
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
@@ -143,13 +150,8 @@
   }
 
   .modal__close-btn {
-    top: -38px;
-    right: -6px;
-  }
-
-  .modal__close_type_preview {
     top: -48px;
-    right: 0;
+    right: -6px;
   }
 
   .modal__label {
